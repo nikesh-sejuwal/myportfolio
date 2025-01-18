@@ -68,4 +68,23 @@
    .about-description {
       width: 95%;
    }
+   .nav-links {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-grow: 1;
+      flex-wrap: wrap;
+   }
+   .download-cv {
+      margin-top: 20px;
+   }
+
+   .nav-list {
+      display: flex;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+   }
 }
