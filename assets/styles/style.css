@@ -269,7 +269,8 @@ body {
    gap: 15px;
 
    border-radius: 20px;
-   background-color: var(--secondary-color);
+   background-color: white;
+   box-shadow: 1px 1px 10px gray;
    width: fit-content;
    margin: 0 auto;
    padding: 20px 30px;
@@ -289,6 +290,9 @@ body {
    color: white;
    padding: 10px 20px;
 }
+.btn:hover {
+   background-color: var(--primary-color);
+}
 
 /* social links */
 .social-links {
@@ -306,4 +310,12 @@ body {
 
 .social-links > a > img {
    width: 45px;
+}
+
+/* fonts */
+.myh1 {
+   font-size: 2rem;
+}
+.myh2 {
+   font-size: 1.5rem;
 }

@@ -42,6 +42,11 @@
    .contact-container > p {
       font-size: 5vw;
    }
+
+   .project-text {
+      padding-bottom: 20px;
+      border-bottom: 1px solid gray;
+   }
 }
 
 @media screen and (max-width: 750px) {
@@ -86,5 +91,14 @@
       flex-wrap: wrap;
       list-style-type: none;
       padding: 0;
+   }
+   .social-links > a > img {
+      width: 30px;
+   }
+   .tech-icon {
+      width: 30px;
+   }
+   .project-description {
+      font-size: 0.85rem;
    }
 }
