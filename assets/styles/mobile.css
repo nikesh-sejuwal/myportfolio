@@ -71,7 +71,7 @@
       font-size: 2rem;
    }
    .about-description {
-      width: 95%;
+      width: 100%;
    }
    .nav-links {
       display: flex;
@@ -100,5 +100,20 @@
    }
    .project-description {
       font-size: 0.85rem;
+   }
+}
+
+@media screen and (min-width: 1600px) {
+   #svg-container {
+      min-height: 1400px;
+   }
+
+   .home-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 950px;
+      text-align: center;
+      padding: 32px;
    }
 }
