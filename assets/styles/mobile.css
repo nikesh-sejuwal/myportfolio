@@ -50,8 +50,13 @@
 }
 
 @media screen and (max-width: 750px) {
+   .header {
+      display: flex;
+      justify-content: space-between;
+   }
    .home-section {
       display: block;
+      padding: 32px 10px;
    }
    .photo {
       width: 80%;
@@ -74,7 +79,7 @@
       width: 100%;
    }
    .nav-links {
-      display: flex;
+      display: none;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
@@ -82,6 +87,7 @@
       flex-wrap: wrap;
    }
    .download-cv {
+      display: none;
       margin-top: 20px;
    }
 
@@ -100,6 +106,100 @@
    }
    .project-description {
       font-size: 0.85rem;
+   }
+
+   /* HAMBURGER */
+
+   /* HAMBURGER */
+   .hamburger {
+      position: relative;
+      margin-top: 30px;
+      display: block;
+      width: 35px;
+      height: 25px;
+      z-index: 99;
+      cursor: pointer;
+      appearance: none;
+      background: none;
+      outline: none;
+      border: none;
+   }
+
+   .hamburger .bar,
+   .hamburger::after,
+   .hamburger::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+   }
+
+   .hamburger.is-active:before {
+      transform: rotate(-45deg) translate(-8px, 6px);
+   }
+
+   .hamburger.is-active:after {
+      transform: rotate(45deg) translate(-9px, -8px);
+   }
+
+   .hamburger.is-active .bar {
+      opacity: 0;
+   }
+
+   .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      min-height: 100vh;
+      display: block;
+      z-index: 98;
+      background-color: #1e3a8a;
+      padding-top: 120px;
+      transition: 0.4s;
+   }
+
+   .mobile-nav.is-active {
+      left: 0;
+   }
+   /* .mobile-na.is-active {
+   left: 0;
+} */
+
+   .mobile-nav ul li a {
+      display: block;
+      text-align: center;
+      margin-bottom: 16px;
+      padding: 16px;
+      color: #fff;
+   }
+
+   .mobile-nav ul li a:hover {
+      color: var(--secondary-color);
+   }
+
+   .mobile-nav .cv .mobile-btn {
+      display: block;
+      text-align: center;
+      margin: 16px auto;
+      color: #000;
+   }
+
+   .cv {
+      text-align: center;
+      margin-top: 30px;
+   }
+
+   .typed-text {
+      font-size: 1.3rem;
+      font-weight: 400;
+   }
+
+   li {
+      list-style: none;
    }
 }
 
