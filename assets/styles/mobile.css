@@ -3,8 +3,8 @@
       display: block;
    }
    .photo {
-      width: 50%;
-      height: 60%;
+      width: 40%;
+      height: 50%;
    }
    .text-container {
       margin-top: 5rem;
@@ -59,8 +59,8 @@
       padding: 32px 10px;
    }
    .photo {
-      width: 80%;
-      height: 60%;
+      width: 60vw;
+      height: 50%;
    }
    .greeting {
       font-size: 1.25rem;
