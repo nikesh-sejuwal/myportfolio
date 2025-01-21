@@ -57,6 +57,8 @@ function loadedtext() {
    }, 4000);
 }
 document.addEventListener("DOMContentLoaded", function () {
-   loadedtext();
-   setInterval(loadedtext, 8000);
+   setTimeout(() => {
+      loadedtext();
+      setInterval(loadedtext, 8000);
+   }, 4000);
 });
