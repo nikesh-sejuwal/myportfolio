@@ -56,6 +56,7 @@ function loadedtext() {
       text.classList.add("fade-in");
    }, 4000);
 }
-
-loadedtext();
-setInterval(loadedtext, 8000);
+document.addEventListener("DOMContentLoaded", function () {
+   loadedtext();
+   setInterval(loadedtext, 8000);
+});
