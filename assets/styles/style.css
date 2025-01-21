@@ -89,6 +89,16 @@ body {
    background-color: #ecc94b;
 }
 
+.fade-in {
+   opacity: 0;
+   animation: fadeInAnimation 4s forwards infinite;
+}
+
+@keyframes fadeInAnimation {
+   to {
+      opacity: 1;
+   }
+}
 /* Home Section */
 .home-section {
    display: flex;

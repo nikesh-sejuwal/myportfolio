@@ -52,7 +52,6 @@ function loadedtext() {
       text.classList.add("fade-in");
    }, 0);
    setTimeout(() => {
-      text.classList.remove("fade-in");
       text.textContent = "Mobile App Developer";
       text.classList.add("fade-in");
    }, 4000);
